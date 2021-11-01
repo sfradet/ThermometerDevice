@@ -1,3 +1,11 @@
+/*
+ * Group Project
+ * Shawn Fradet, Hiram Viezca
+ * ThermometerDeviceRestService Version 1
+ * CST-326
+ * 10/31/2021
+ * This class is used for sending data via a REST service.
+ */
 package rest;
 
 
