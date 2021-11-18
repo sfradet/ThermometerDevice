@@ -24,10 +24,16 @@ public class ThermometerDeviceRestService {
 		
 		Client client = ClientBuilder.newClient().register(feature);		
 						
-		client.target(url)
-		         .request(MediaType.APPLICATION_JSON)
-		         .accept(MediaType.APPLICATION_JSON)
-		         .post(Entity.json(jsonModel),
-		            String.class);					
+		try {
+			client.target(url)
+	         .request(MediaType.APPLICATION_JSON)
+	         .accept(MediaType.APPLICATION_JSON)
+	         .post(Entity.json(jsonModel),
+	            String.class);	
+		}
+		catch (Exception ex)
+		{
+			System.out.println(ex.getMessage());
+		}		
 	}	            
 }

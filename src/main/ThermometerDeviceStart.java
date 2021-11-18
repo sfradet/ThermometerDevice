@@ -16,9 +16,9 @@ public class ThermometerDeviceStart {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
-		String device_name = "Device Name"; // Name of registered device
-		String username ="username"; // Registered username
-		String password ="password"; // Registered password
+		String device_name = "newdevice"; // Name of registered device
+		String username ="sfradet"; // Registered username
+		String password ="1234"; // Registered password
 		String restURL = "http://localhost:8080/ThermometerProject/rest/rest/posttemps"; // Current REST website
 		
 		ThermometerDevice thermo = new ThermometerDevice(device_name, username, password, restURL);
